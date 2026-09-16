@@ -1,8 +1,8 @@
 # Tiny Tapeout project information
 project:
   title:        "Flappy Bird VGA Game"
-  author:       "Tu Nombre"
-  discord:      ""      # Tu usuario de Discord (opcional)
+  author:       "Esobar Mamani Alejandra Heidi"
+  discord:      "alejandraheidiescobar-ops"    
   description:  "Flappy Bird hardware game with parallax scrolling for TinyVGA PMOD"
   language:     "Verilog"
   clock_hz:     25175000  # Reloj estándar VGA 640x480 @ 60Hz (~25.175 MHz)
