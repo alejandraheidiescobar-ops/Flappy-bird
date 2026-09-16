@@ -1,48 +1,45 @@
 # Tiny Tapeout project information
 project:
-  title:        ""      # Project title
-  author:       ""      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
-  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  title:        "Flappy Bird VGA Game"
+  author:       "Tu Nombre"
+  discord:      ""      # Tu usuario de Discord (opcional)
+  description:  "Flappy Bird hardware game with parallax scrolling for TinyVGA PMOD"
+  language:     "Verilog"
+  clock_hz:     25175000  # Reloj estándar VGA 640x480 @ 60Hz (~25.175 MHz)
 
-  # How many tiles your design occupies? A single tile is about 167x108 uM.
-  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+  # Occupies a single tile
+  tiles: "1x1"
 
-  # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_example"
+  # Reemplaza 'tu_usuario' por tu usuario real de GitHub
+  top_module:  "tt_um_flappy_bird_vga"
 
-  # List your project's source files here.
-  # Source files must be in ./src and you must list each source file separately, one per line.
-  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
     - "project.v"
+    - "hvsync_generator.v"
 
-# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
-# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+# Pinout oficial para TinyVGA PMOD
 pinout:
-  # Inputs
-  ui[0]: ""
+  # Inputs (Entradas)
+  ui[0]: "Jump Button P1"
   ui[1]: ""
-  ui[2]: ""
+  ui[2]: "Jump Button P2"
   ui[3]: ""
   ui[4]: ""
   ui[5]: ""
   ui[6]: ""
   ui[7]: ""
 
-  # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  # Outputs (Salidas alineadas a TinyVGA PMOD)
+  uo[0]: "R0"
+  uo[1]: "G0"
+  uo[2]: "B0"
+  uo[3]: "vsync"
+  uo[4]: "R1"
+  uo[5]: "G1"
+  uo[6]: "B1"
+  uo[7]: "hsync"
 
-  # Bidirectional pins
+  # Bidirectional pins (No utilizados)
   uio[0]: ""
   uio[1]: ""
   uio[2]: ""
