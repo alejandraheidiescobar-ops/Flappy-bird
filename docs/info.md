@@ -14,7 +14,6 @@ This project is a hardware implementation of a Flappy Bird-style game designed f
 * **Game Engine and Physics:** A finite state machine (FSM) manages the game states (Start, Play, Game Over). The bird physics rely on fixed-point signed arithmetic to simulate smooth jump impulses and continuous gravity acceleration.
 * **Procedural Pipe and Terrain Generation:** The gap height for upcoming pipes is randomized using a free-running register (`rng_counter`). Background clouds and ground textures feature parallax scrolling to create depth.
 * **Sprite and Graphics Rendering:** Sprites (the bird and clouds) are stored as 8-bit row bitmaps in internal logic blocks. Color assignment is handled on-the-fly pixel by pixel according to spatial coordinates (`hpos` and `vpos`).
-
 ## How to test
 
 1. **Clock Setup:** Feed a 25.175 MHz clock signal into the `clk` pin.
