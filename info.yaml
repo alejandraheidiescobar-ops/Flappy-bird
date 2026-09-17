@@ -14,7 +14,7 @@ project:
   top_module:  "tt_um_flappy_bird"  
 
   source_files:
-    - "project.v"
+    - "flappy_bird.v"
     - "hvsync_generator.v"
 
 # Pinout oficial para TinyVGA PMOD
