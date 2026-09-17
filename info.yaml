@@ -10,7 +10,8 @@ project:
   # Occupies a single tile
   tiles: "1x1"
 
-  top_module:  "tt_um_flappy_bird" 
+  # Reemplaza 'tu_usuario' por tu usuario real de GitHub
+  top_module:  "tt_um_flappy_bird"  
 
   source_files:
     - "project.v"
