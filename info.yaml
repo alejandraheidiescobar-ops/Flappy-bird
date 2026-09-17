@@ -1,7 +1,7 @@
 # Tiny Tapeout project information
 project:
   title:        "Flappy Bird VGA Game"
-  author:       "Esobar Mamani Alejandra Heidi"
+  author:       "Escobar Mamani Alejandra Heidi"
   discord:      "alejandraheidiescobar-ops"    
   description:  "Flappy Bird hardware game with parallax scrolling for TinyVGA PMOD"
   language:     "Verilog"
